@@ -2,7 +2,8 @@ language: c
 services: docker
 
 before_install:
-  - make install-config
+  - make patch-config
+  - git checkout .
 
 script:
   - make
