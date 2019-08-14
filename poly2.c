@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include <math.h>
 
 int main(int argc, char* argv[]) {
     if (argc <= 3) {
@@ -14,15 +12,12 @@ int main(int argc, char* argv[]) {
 
     double d = b * b - 4 * a * c;
 
-    if (d < 0) {
-        fprintf(stderr, "Solution is imaginary");
+    if (is_not_real) {
+        fprintf(stderr, "Error: Solution is imaginary\n");
         return -2;
     }
 
-    double x[2] = {
-        (-b - sqrt(d)) / (2 * a),
-        (-b + sqrt(d)) / (2 * a)
-    };    
+    double x[2] = {0, 0};
 
     printf("%lf\t%lf\n", x[0], x[1]);    
     return 0;
