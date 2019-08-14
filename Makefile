@@ -1,10 +1,14 @@
 EXEC=poly2
-CFLAGS=-c99 -Wall
+CFLAGS=-std=c99 -Wall -Werror
+LDFLAGS=-lm
 
 all: $(EXEC) test
 
-test: 
-	python test/test.py
+$(EXEC): %: %.c
+	$(CC) $(CFLAGS) $? -o $@ $(LDFLAGS)
+
+test: $(EXEC)
+	python test/test.py $<
 
 patch-config:
 	git config filter.openssl.diff '.obfuscator/diff'
