@@ -1,10 +1,9 @@
 language: c
-services: docker
-
+env:
+  secure: Qn0RLF3MoUqGht8uzBaJcu/tPCiQXnoPGup9G0nNCVQhAzqlCQOtjbAeQusfRueDydyCrqURJmaclgWNLHvrk/LdkpN8LslqOuSXj636n/KMfYkl1awV9uAawFbfwi3+SQWklBrF5f/7EsU7CqV2teaBxc/eXQRsdtpRxpQX0zXBD2vOpswCTJu/rV7i62IGraIdnxxS1mIHIhSyNA3QNR69eAVIWiKIBK7iqAJx2LEczPsV8hqIyFfi6a8ymGlm+g8fRyU59avkBUda+ZR1sdN1NjbwOZ/Uj/ytYc0zjVChqIGoWqH6lCV2A+1wW3y6n4rGmvc2KAxjQ87Hiu1h0sPW56ITltm/6K/nxkojfW3PYNZGtq8bUleVBd44n5gLMmD04mmm5SBM1meQnS+EuOhodJ7q7SRKrB1xKeG8JovnA6nskDlEJfJfPz+22m6lvQ0eoGGBOe3ydwTOcfFmeQneERTWvC4jEadWMO8qJvPUrrPx6JHuv9gs6yjJRYs9YT1DKpz53ZPNX5eR1ap9TzIk7HThE+/hTwDxBjhhTGayotTSu0igzG/F+p71XTANOO+nJfJCxCABgBUsvWYe0zyvLdbbNJanAtePhuYvjo0qgo0RQOn8W1u3FAfM1t65fOG1nnu6w5XFKHQpJx9s+w1IkPnK6tG9+YwWJbOW+v0=  
 before_install:
-  - make patch-config
-  - git checkout .
-
+- make patch-config
+- git checkout .
 script:
-  - make
-  - make test
+- make
+- make test
