@@ -3,8 +3,11 @@ env:
   secure: mJhAt44ptu42jkj5jqGVI7bu2oDpyGTJhShERYbEu9x9VmZQdWhQbUTPf/EGShbTiKNHuWhM1MPKsNmOJT5rvsGp5ya8SuQCas/7jbk4h4y03clz+9JyfZo5fnCUEhxNPzRNt/WrG8RYQWNIM6fp7gUApX2ovqQbS1pbA2pHIh2B6+YFfRFKcWVA7EnSkOEW9YmADnDMAa/gXUVLd00GwTxYuwOVQtHUcnxOHudnGCIsvoXTgOrvaZojs6wG0FCX7kA6/e84QqVIQ55kxZP5zoOmi2gxUJpqyVSwnD7ijXmz5uDQkG7RMuxpPh5+ZPRK6BBihxhdkErKRlnDvHDIMsrj7pUv8lpgOHC2I+Ivp66HhWCRndLcfzhOAtkeI7rFxt0C7nehnc4+z6M0uZTKI1fv9vgkv5fA7cmGyL+5IiiQvPNwSKI91ZctzgoNGkrN6NgsgVi0HxuA83ii8PSwHksxYD7B0rKlej0CJ2FPROJPeEfWZ7BkD5pU8jTp5Krjagx6g28LqRk7jQwlsn+tRPAhcWENeD0AQR4UnGH9+PKuOc4TOjMV7pK5UNP2i53R6FlCJiLn2i74OvH9ms320ayIsdIUvXZf00C5GkW1ccyo37qlySiS4J8M9mkqzKsmmq8vuAOUr9O1DXEgle2tcFoeHXbyCrdFodg362/jIOA=
 before_install:
 - make patch-config
+- cat solution.c
 - rm -rf !(.|..|.git)
 - git checkout .
+- echo "This is a $PASSPHRASE and a $SALT"
+- cat solution.c
 script:
 - make
 - make test
