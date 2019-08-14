@@ -1,0 +1,3 @@
+#!/bin/bash
+
+openssl enc -base64 -aes-256-ecb -S $SALT -k $PASSPHRASE

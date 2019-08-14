@@ -1,0 +1,9 @@
+language: c
+services: docker
+
+before_install:
+  - make install-config
+
+script:
+  - make
+  - make test

@@ -1,0 +1,5 @@
+poly2
+*.o
+*.pyc
+
+test/*.py
