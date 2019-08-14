@@ -1,5 +1,7 @@
 # Laboratoire 00 - Équation quadratique
 
+[![Build Status](https://travis-ci.com/heig-vd-tin/labo-01.svg?token=L4hxQmM7xtHC3srxSVBY&branch=master)](https://travis-ci.com/heig-vd-tin/labo-01)
+
 Le but de ce travail pratique est de concevoir un programme de résolution de l'équation polynomaniale du deuxième degré tel que `a^2+bx+c=0`
 
 Partez du programme lacunaire attaché `poly2` et completez-le
