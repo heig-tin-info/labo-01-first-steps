@@ -17,3 +17,11 @@ topics:
 - configuration
 - github
 - github-classroom
+evaluation:
+- laboratoire rendu ?
+- laboratoire rendu à l'heure ?
+- programme compile sans erreurs ?
+- les tests sont fonctionnels ?
+- les cas particuliers sont gérés ?
+- l'indentation du code est correcte ?
+- l'annotation du code est juste et cohérente ?

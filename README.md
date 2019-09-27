@@ -122,4 +122,86 @@ gcd.c:30:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf�
 gcd.c:33:1: error: expected ‘;’ before ‘}’ token
 ```
 
-Vous constatez toute une série d'erreurs. Votre but c'est de les corriger.
+Vous constatez toute une série d'erreurs. Votre but c'est de les corriger. Les étapes sont donc:
+
+1. Essayer de compiler
+2. Corriger le programme, le sauver
+3. Retour à 1 si échec
+
+## Compilation automatique
+
+En général on n'utilise généralement pas `gcc` directement, on ajoute des **options de compilation**. Certaines options comme `-std=c99` permettent de dire au compilateur d'utiliser le standard **C99**. Pour simplifier la compilation, le développeur écrit généralement un fichier nommé *Makefile* qui contient toute la procédure de compilation.
+
+Pour Info1, il ne vous sera jamais demandé d'écrire un Makefile par contre il est essentiel que vous puissiez en utiliser un.
+
+Pour l'utiliser, executer simplement le programme `make` dans le répertoire qui contient un `Makefile`:
+
+```bash
+$ make
+cc -std=c99 -Wall -Werror gcd.c -o gcd
+test/test.sh /mnt/c/Users/yves.chevalli/Dropbox/work/heig-vd/teaching/info/laboratories/info1-labo-01/gcd
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+```
+
+Vous constatez que le programme s'est bien compilé mais qu'une erreur est apparue à la recette `test`. C'est à dire que le programme de test n'a pas fonctionné. Cherchons à savoir pourquoi.
+
+```bash
+$ ./gcd 12 6
+11
+```
+
+C'est étrange, le programme retourne 11 alors que le plus grand diviseur commun devrait être 6. Il doit y avoir un autre problème dans le programme. Sauriez-vous le trouver ?
+
+## Debug depuis Visual Studio Code
+
+Pour de petits programme, compiler manuellement ou via un Makefile est une très bonne solution mais pour de très gros programmes il existe d'autres techniques.
+
+Depuis Visual Studio Code, vous pouvez utiliser le raccourcis `<F5>` lorsque vous éditez le programme `gcd.c` pour lancer le débogueur. Essayez:
+
+1. Ouvrir `gcd.c`
+2. Cliquez à gauche de la ligne 12 (`int r;`), un point rouge apparaît. Il s'agit d'un *breakpoint*
+3. Lancer votre programme avec `<F5>`
+4. En utilisant `<F11>` vous pouvez avancer dans votre programme et constater la valeur des différentes variabels `a`, `b`, `r`, ...
+
+![debug](assets/debug.png)
+
+Vous pouvez naturellement créer d'autres `breakpoints` si vous le désirez. Pour interrompre le debug utilisez `<SHIFT>+<F5>`. Utilisez `<CTRL>+<SHIFT>+<E>` pour revoir l'explorateur de code.
+
+## Annotation de votre programme
+
+Pour être bien certain que vous ayez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce chacune fait voici un exemple:
+
+```c
+#include <stdlib.h> // Inclu la bibliothèque stdlib pour pouvoir utiliser la fonction `atoi`
+
+int gcd(int a, int b) { // Déclare la fonction gcd qui prend en paramètre 2 entiers a et b et retourne un entier
+  int r; // Déclare une variable `r` qui est le reste de la division
+```
+
+Si vous souhaitez être plus précis vous pouvez utiliser les commentaires multi lignes:
+
+```c
+/*
+Ceci est un commentaire multi-ligne
+pour expliquer des choses plus longues
+...
+...
+*/
+```
+
+Si vous ne comprenez pas bien certaines ligne de code essayer de chercher la réponse sur Google.
+
+## Commit de vos changements
+
+Une fois que vous avez:
+
+1. Corrigé le programme
+2. Vérifié que les tests fonctionnent
+3. Annoté le programme comme demandé
+
+Vous pouvez valider vos changement avec `git`
+
+```console
+$ git commit -am "Fix bugs + add comments"
+```
