@@ -1,6 +1,8 @@
-# Laboratoire 01 - Premier pas avec l'environnent de développement
+# Laboratoire 01 - Premiers pas
 
-Le but de ce travail pratique est la prise en main de l'environnent de développent installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé. Pour l'heure, avançons pas à pas.
+Le but de ce travail pratique est la prise en main de l'environnent de développent installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
+
+Pour l'heure, avançons pas à pas.
 
 - **Durée**: 2 périodes
 - **Date de rendu**: Dimanche soir avant minuit
@@ -28,7 +30,7 @@ Après avoir joint le travail, vous pouvez vous rendre sur GitHub, dans votre es
 
 Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin permettant modifier votre référentiel
 
-![copy-clone-link](copy-clone-link.png)
+![copy-clone-link](assets/copy-clone-link.png)
 
 Vous avez ici le choix entre deux protocoles de communication:
 
@@ -100,7 +102,7 @@ Prenez connaissance de la structure des fichiers:
     └── test.sh     # Le test du programme gcd.c
 ```
 
-Pour l'heure, le seul fichier qui nous intéresse c'est `gcd.c`. Votre travail c'est de corriger ce programme et de le compiler.
+Pour l'instant, le seul fichier qui nous intéresse c'est `gcd.c`. Votre travail c'est de corriger ce programme et de le compiler.
 
 ## Compilation
 
