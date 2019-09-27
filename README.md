@@ -1,11 +1,11 @@
-# Laboratoire 01 - Premier pas avec l'environment de dévelopment
+# Laboratoire 01 - Premier pas avec l'environnent de développement
 
-Le but de ce travail pratique est la prise en main de l'environment de dévelopment installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé. Pour l'heure avançons pas à pas.
+Le but de ce travail pratique est la prise en main de l'environnent de développent installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé. Pour l'heure, avançons pas à pas.
 
 - **Durée**: 2 périodes
 - **Date de rendu**: Dimanche soir avant minuit
 
-A la fin de ce travail pratique vous serez en mesure de:
+À la fin de ce travail pratique vous serez en mesure de:
 
 - récupérer les fichiers sources d'un travail pratique depuis GitHub (*clone*);
 - apporter vos modifications, ajouter des fichiers;
@@ -16,13 +16,13 @@ A la fin de ce travail pratique vous serez en mesure de:
 
 ## Accès au travail pratique
 
-Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distribuer des travaux pratiques aux étudiants s'exercant à la programmation. La première étape consiste donc à récupérer l'adresse du devoir depuis Cyberlearn ou Slack. Il vous est ensuite demandé de **joindre** le travail (*assignment*).
+Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distribuer des travaux pratiques aux étudiants s'exerçant à la programmation. La première étape consiste donc à récupérer l'adresse du devoir depuis Cyberlearn ou Slack. Il vous est ensuite demandé de **joindre** le travail (*assignment*).
 
 ![accept-this-assignment](assets/accept-this-assignment.png)
 
-Lors de cette opération une copie du référentiel d'origine est crée avec votre nom. Ce processus de copie s'appelle *fork* (fourchette), cela crée un point d'embranchement entre la copie de référence et votre propre copie que vous pourrez modifier à souhait. Dès lors vous disposerez d'un espace personnel dans lequel vous pourrez apporter vos propres modifications. C'est votre version publiée sous GitHub qui sera utilisée pour l'évaluation du laboratoire.
+Lors de cette opération, une copie du référentiel d'origine est créée avec votre nom. Ce processus de copie s'appelle *fork* (fourchette), cela crée un point d'embranchement entre la copie de référence et votre propre copie que vous pourrez modifier à souhait. Dès lors vous disposerez d'un espace personnel dans lequel vous pourrez apporter vos propres modifications. C'est votre version publiée sous GitHub qui sera utilisée pour l'évaluation du laboratoire.
 
-Après avoir joint le travail vous pouvez vous rendre sur GitHub, dans votre espace de travail
+Après avoir joint le travail, vous pouvez vous rendre sur GitHub, dans votre espace de travail
 
 ![you-are-ready-to-go](assets/you-are-ready-to-go.png)
 
@@ -35,11 +35,11 @@ Vous avez ici le choix entre deux protocoles de communication:
 - HTTPS
 - GIT+SSH
 
-La première variante utilisera vos identifiants de connection (login et mot de passe) qui vous seront demandés à chaque opération. La deuxième variante utilisera un canal sécurisé en utilisant la clé SSH que vous avez créé lors du précédant labo.
+La première variante utilisera vos identifiants de connexion (login et mot de passe) qui vous seront demandés à chaque opération. La deuxième variante utilisera un canal sécurisé en utilisant la clé SSH que vous avez créé lors du précédent labo.
 
 ## Clone du référentiel
 
-Lors du travail précédent nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portal collaboratif pour les utilisateurs de Git.
+Lors du travail précédent, nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portal collaboratif pour les utilisateurs de Git.
 
 Pour récupérer votre projet, ouvrez une console **WSL** et faites un clone du référentiel en utilisant le lien copié plus haut:
 
@@ -65,25 +65,25 @@ Depuis cette étape vous pouvez exécuter Visual Studio Code avec:
 $ code .
 ```
 
-Visual Studio Code est exécuté de manière très particulière. C'est le programme Windows qui est exécuté mais il est connecté à votre instance linux on appelle ceci une connection à distance (*remote connection*). En bas à gauche de la fenêtre de Visual Studio Code vous avez un petit logo vert indiquant l'état de la connection à distance avec WSL.
+Visual Studio Code est exécuté de manière très particulière. C'est le programme Windows qui est exécuté, mais il est connecté à votre instance Linux on appelle ceci une connexion à distance (*remote connection*). En bas à gauche de la fenêtre de Visual Studio Code vous avez un petit logo vert indiquant l'état de la connexion à distance avec WSL.
 
 ![open-remote](assets/open-remote.png)
 
-Travailler en connection à distance vous permet d'exécuter toutes les commandes Linux depuis Windows. C'est très pratique pour rester compatible avec l'environment normalisé POSIX qui n'est pas disponible depuis Windows seul.
+Travailler en connexion à distance vous permet d'exécuter toutes les commandes Linux depuis Windows. C'est très pratique pour rester compatible avec l'environnent normalisé POSIX qui n'est pas disponible depuis Windows seul.
 
 ## Installation des extensions
 
-Pour diposer de tout l'arcenal de dévelopment en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio. Le raccourcis `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. Il vous est proposé l'installation des extensions suivantes:
+Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio. Le raccourci `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. Il vous est proposé l'installation des extensions suivantes:
 
 ![extensions](assets/extensions.png)
 
-**C/C++** Permet de mieux intéragir avec du code C, il permet de s'interfacer avec un débogueur, d'avoir de l'autocomplétion de code et un correcteur interactif de sytaxe.
+**C/C++** Permet de mieux interagir avec du code C, il permet de s'interfacer avec un débogueur, d'avoir de l'autocomplétion de code et un correcteur interactif de sytaxe.
 
-**Clang-Format** Permet d'automatiquement formatter le code source, c'est à dire convenablement aligner les différentes lignes du code selon un standard prédéfini.
+**Clang-Format** Permet d'automatiquement formater le code source, c'est à dire convenablement aligner les différentes lignes du code selon un standard prédéfini.
 
-**EditorConfig** Permet de configurer certaines options propre à chaque type de fichier (nombre de tabulation, type d'encodage, type de fin de ligne, etc.)
+**EditorConfig** Permet de configurer certaines options propres à chaque type de fichier (nombre de tabulation, type d'encodage, type de fin de ligne, etc.)
 
-Le raccourcis `<CTRL>+<MAJ>+<E>` permet de revenir à l'arborescence de travail.
+Le raccourci `<CTRL>+<MAJ>+<E>` permet de revenir à l'arborescence de travail.
 
 ## Familiarisation avec la structure des fichiers
 
@@ -134,7 +134,7 @@ En général on n'utilise généralement pas `gcc` directement, on ajoute des **
 
 Pour Info1, il ne vous sera jamais demandé d'écrire un Makefile par contre il est essentiel que vous puissiez en utiliser un.
 
-Pour l'utiliser, executer simplement le programme `make` dans le répertoire qui contient un `Makefile`:
+Pour l'utiliser, exécuter simplement le programme `make` dans le répertoire qui contient un `Makefile`:
 
 ```bash
 $ make
@@ -144,7 +144,7 @@ Makefile:10: recipe for target 'test' failed
 make: *** [test] Error 1
 ```
 
-Vous constatez que le programme s'est bien compilé mais qu'une erreur est apparue à la recette `test`. C'est à dire que le programme de test n'a pas fonctionné. Cherchons à savoir pourquoi.
+Vous constatez que le programme s'est bien compilé, mais qu'une erreur est apparue à la recette `test`. C'est à dire que le programme de test n'a pas fonctionné. Cherchons à savoir pourquoi.
 
 ```bash
 $ ./gcd 12 6
@@ -155,14 +155,14 @@ C'est étrange, le programme retourne 11 alors que le plus grand diviseur commun
 
 ## Debug depuis Visual Studio Code
 
-Pour de petits programme, compiler manuellement ou via un Makefile est une très bonne solution mais pour de très gros programmes il existe d'autres techniques.
+Pour de petits programmes, compiler manuellement ou via un Makefile est une très bonne solution, mais pour de très gros programmes il existe d'autres techniques.
 
-Depuis Visual Studio Code, vous pouvez utiliser le raccourcis `<F5>` lorsque vous éditez le programme `gcd.c` pour lancer le débogueur. Essayez:
+Depuis Visual Studio Code, vous pouvez utiliser le raccourci `<F5>` lorsque vous éditez le programme `gcd.c` pour lancer le débogueur. Essayez:
 
 1. Ouvrir `gcd.c`
 2. Cliquez à gauche de la ligne 12 (`int r;`), un point rouge apparaît. Il s'agit d'un *breakpoint*
 3. Lancer votre programme avec `<F5>`
-4. En utilisant `<F11>` vous pouvez avancer dans votre programme et constater la valeur des différentes variabels `a`, `b`, `r`, ...
+4. En utilisant `<F11>` vous pouvez avancer dans votre programme et constater la valeur des différentes variables `a`, `b`, `r`, ...
 
 ![debug](assets/debug.png)
 
@@ -170,7 +170,7 @@ Vous pouvez naturellement créer d'autres `breakpoints` si vous le désirez. Pou
 
 ## Annotation de votre programme
 
-Pour être bien certain que vous ayez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce chacune fait voici un exemple:
+Pour être bien certain que vous avez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce chacune fait voici un exemple:
 
 ```c
 #include <stdlib.h> // Inclu la bibliothèque stdlib pour pouvoir utiliser la fonction `atoi`
@@ -183,14 +183,14 @@ Si vous souhaitez être plus précis vous pouvez utiliser les commentaires multi
 
 ```c
 /*
-Ceci est un commentaire multi-ligne
+Ceci est un commentaire multiligne
 pour expliquer des choses plus longues
 ...
 ...
 */
 ```
 
-Si vous ne comprenez pas bien certaines ligne de code essayer de chercher la réponse sur Google.
+Si vous ne comprenez pas bien certaines lignes de code, essayez de chercher la réponse sur Google.
 
 ## Commit de vos changements
 
@@ -200,8 +200,38 @@ Une fois que vous avez:
 2. Vérifié que les tests fonctionnent
 3. Annoté le programme comme demandé
 
-Vous pouvez valider vos changement avec `git`
+Vous pouvez maintenant valider vos changements avec `git`
 
 ```console
 $ git commit -am "Fix bugs + add comments"
+[master abde12] Fix bugs + add comments
+ 1 file changed, 140 insertions(+), 1 deletion(-)
+ create mode 100644 gcd.c
 ```
+
+Si cela ne fonctionne pas c'est que vous n'avez probablement pas configuré votre environnent Git sous WSL (si vous exécutez ceci depuis WSL). Dans ce cas, configurez vos identifiants comme dans le labo précédent:
+
+```console
+git config --global user.name "Emmet Lathrop Brown"
+git config --global user.email emmet.brown@heig-vd.ch
+```
+
+## Push de vos changements
+
+Une fois le commit effectué, il faut encore soumettre vos changements sur GitHub, ceci s'effectue avec la commande `git push`
+
+```console
+$ git push
+Counting objects: 25, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (25/25), 197.60 KiB | 2.53 MiB/s, done.
+Total 25 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:heig-vd-tin/info1-labo-01.git
+   dd54203..e8d278e  master -> master
+```
+
+À présent vous pouvez retourner sur GitHub pour vérifier que votre rendu de labo est bel et bien présent.
+
+Il se peut que vous ayez une erreur si vous utilisez le protocole `git+ssh` car votre clé SSH n'a pas été déployée sur GitHub, ou alors que vous n'avez pas encore configuré WSL avec votre clé privée créée au laboratoire précédent. Pour récupérer votre clé privée, il vous faut simplement la copier depuis l'emplacement ou elle se trouve dans `~/.ssh`. Une autre option consiste à créer une nouvelle clé avec la procédure décrite dans la donnée du laboratoire précédent. N'oubliez pas non plus de déployer votre clé sous GitHub.
