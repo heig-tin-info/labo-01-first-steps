@@ -1,2 +1,0 @@
-*.py filter=openssl diff=openssl
-solution.c filter=openssl diff=openssl

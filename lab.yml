@@ -1,0 +1,19 @@
+name: Premiers pas avec l'environment de dévelopment
+difficulty: 1
+periods: 2
+deadline: J+3 midnight
+goals:
+- Joindre un assignment depuis GitHub Classroom.
+- Récupérer les fichiers sources d'un travail pratique depuis GitHub.
+- Apporter vos modifications, ajouter des fichiers.
+- Soumettre vos changements sur GitHub.
+- Compiler votre programme.
+- Tester votre programme.
+- Comprendre les différents fichiers constituant un projet d'Info1.
+topics:
+- installation
+- compliateur
+- éditeur de code
+- configuration
+- github
+- github-classroom

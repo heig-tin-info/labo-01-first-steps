@@ -1,13 +1,4 @@
 language: c
-before_install:
-- make patch-config
-- cat solution.c
-- rm -rf !(.|..|.git)
-- git checkout .
-- echo "This is a $PASSPHRASE and a $SALT"
-- cat solution.c
 script:
 - make
 - make test
-env:
-  secure: hfo27/OU6SYNP2sASFxrVxxsACvA8FfYh+YM1Eyeiz4REcocbkXa8aevfEmwtmscx2KfyIYcwRaPAH0DKw6fC8LmkhwoRs363vBOOgzMx2ZM2K1guJzjVIGVWkUfRzZ1VUIkq7q7CYMtJA6/gA/xbamWBxfkOfGeeua2A/c4Iy+nKUjhD40kbuYOopFq7Tnl8hTrNZtMiCnKMVSByQCWWg2HOn7N0/91NkOui3ERJnCueY3oLO1kTOZiHkuXl/4qgjpLbz0T5+QGizZ43sevhNyDDTpw3SdQaXl++L68P0sDtH0O4X3Y+2xdq1jEhy+anMU1yiSJJJuffZ6PfA8FP2WJ5iCI8n8gFCR0L7R1xuSY6Jx6CB+OTLDF9NjbBRKc91oNBIe4DwiDY9va/ThiG9gpAo9kCOMK5jtfu8IPEebbxke+qhzIXT2tK+fGh9LLteYubvTVuf60dk+lU9LLlgJvrzIFMsnRanU83ccMJViLj7MmrlwcyZyL17ycuJAEeQUp6AvE2e0I4pJkXTFM2lNUZiOvqmFD3qwkbCRpg7iBC/wrKH+vgYv6RUqJe7Rcd+4YIV0aLQkJTeyQUhxmkVh7z/sUK9D13v3rbAReNQj997PgXKkIHkws66tpEZNhbkac/BGrf0FMhkFVQ5aV2GJW6MXTq23ytKC+jItUtXM=

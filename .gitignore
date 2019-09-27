@@ -1,3 +1,4 @@
-poly2
+gcd
 *.o
 *.pyc
+*.out
