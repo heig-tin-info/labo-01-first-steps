@@ -1,6 +1,6 @@
 # Laboratoire 01 - Premiers pas
 
-Le but de ce travail pratique est la prise en main de l'environnent de développent installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
+Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
 
 Pour l'heure, avançons pas à pas.
 
