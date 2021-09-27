@@ -5,7 +5,6 @@ Le but de ce travail pratique est la prise en main de l'environnement de dévelo
 Pour l'heure, avançons pas à pas.
 
 - **Durée**: 2 périodes
-- **Date de rendu**: Lundi soir avant minuit
 
 À la fin de ce travail pratique vous serez en mesure de :
 
@@ -13,7 +12,7 @@ Pour l'heure, avançons pas à pas.
 - apporter vos modifications, ajouter des fichiers ;
 - soumettre vos changements sur GitHub ;
 - compiler votre programme ;
-- le tester;
+- le tester ;
 - comprendre les différents fichiers constituant un projet d'Info1.
 
 ## Accès au travail pratique
@@ -32,12 +31,7 @@ Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin p
 
 ![copy-clone-link](assets/copy-clone-link.png)
 
-Vous avez ici le choix entre deux protocoles de communication :
-
-- `HTTPS`
-- `GIT` + `SSH`
-
-La première variante utilisera vos identifiants de connexion (login et mot de passe) qui vous seront demandés à chaque opération. La deuxième variante utilisera un canal sécurisé en utilisant la clé SSH que vous avez créé lors du précédent labo (cela vous évite en outre de devoir taper votre mot de passe).
+Vous avez ici le choix entre deux protocoles de communication `HTTPS` et `GIT` + `SSH`. La première variante utilisera vos identifiants de connexion (login et mot de passe) qui vous seront demandés à chaque opération. La deuxième variante utilisera un canal sécurisé en utilisant la clé SSH que vous avez créé lors du précédent labo (cela vous évite en outre de devoir taper votre mot de passe).
 
 ## Clone du référentiel
 
@@ -165,7 +159,13 @@ Sauriez-vous le trouver ?
 
 Pour de petits programmes, compiler manuellement ou via un *Makefile* est une très bonne solution, mais pour de très gros programmes il existe d'autres techniques.
 
-Depuis Visual Studio Code, vous pouvez utiliser le raccourci `<F5>` lorsque vous éditez le programme `gcd.c` pour lancer le débogueur. Essayez :
+La première étape est de vous assurez que vous avez bien un débogueur installé sur votre système. Depuis le terminal (`<C-j>`) tentez d'installer `gdb` (GNU Debugger) avec:
+
+```console
+$ sudo apt install gdb
+```
+
+Dès à présent, depuis Visual Studio Code, vous pouvez utiliser le raccourci `<F5>` lorsque vous éditez le programme `gcd.c` pour lancer le débogueur. Essayez :
 
 1. Ouvrir le fichier `gcd.c`
 2. Cliquez à gauche de la ligne 12 (`int r;`), un point rouge apparaît. Il s'agit d'un *breakpoint*
@@ -183,7 +183,7 @@ Vous pouvez naturellement créer d'autres `breakpoints` si vous le désirez. Pou
 Pour être bien certain que vous avez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce chacune fait voici un exemple :
 
 ```c
-#include <stdlib.h> // Inclu la bibliothèque stdlib pour pouvoir utiliser la fonction `atoi`
+#include <stdlib.h> // Inclus la bibliothèque stdlib pour pouvoir utiliser la fonction `atoi`
 
 int gcd(int a, int b) { // Déclare la fonction gcd qui prend en paramètre 2 entiers a et b et retourne un entier
   int r; // Déclare une variable `r` qui est le reste de la division
@@ -256,7 +256,7 @@ Si vous souhaitez être plus efficace dans l'écriture de programmes, vous devez
 2. `<CTRL> + <SHIFT> + P` Exécution de commandes
 3. `<CTRL> + B` Afficher/cacher l'explorateur de fichiers
 
-La première commande permet de facilement naviguer dans les fichiers apparaissant dans l'explorateur de fichiers à gauche de la fenêtre. Une fois `<C-P>` entré, vous pouvez faire une *fuzzy search*, c'est à dire taper des caractères qui apparaissent dans l'ordre dans les noms des fichiers. Par exemple `<C-P> mi` sélectionne `Makefile` qui contient un `m` suivi plus tard d'un `i`.
+La première commande permet de facilement naviguer dans les fichiers apparaissant dans l'explorateur de fichiers à gauche de la fenêtre. Une fois `<C-P>` entré, vous pouvez faire une *fuzzy search*, c'est-à-dire taper des caractères qui apparaissent dans l'ordre dans les noms des fichiers. Par exemple `<C-P> mi` sélectionne `Makefile` qui contient un `m` suivi plus tard d'un `i`.
 
 La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code. Essayez par exemple d'ouvrir le fichier `README.md` (celui-ci) et de sélectionner les 6 lignes débutant avec des chiffres ci-dessous. Ensuite choisissez `Sort` dans le menu apparaissant avec `<CTRL> + <SHIFT> + P`.
 
