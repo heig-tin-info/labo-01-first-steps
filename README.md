@@ -159,7 +159,7 @@ Saurez-vous le trouver ?
 
 Pour de petits programmes, compiler manuellement ou via un *Makefile* est une très bonne solution, mais pour de très gros programmes il existe d'autres techniques.
 
-La première étape est de vous assurez que vous avez bien un débogueur installé sur votre système. Depuis le terminal (`<C-j>`) tentez d'installer `gdb` (GNU Debugger) avec:
+La première étape est de vous assurer que vous avez bien un débogueur installé sur votre système. Depuis le terminal (`<C-j>`) tentez d'installer `gdb` (GNU Debugger) avec:
 
 ```console
 $ sudo apt install gdb
@@ -187,7 +187,7 @@ int gcd(int a, int b) { // Déclare la fonction gcd qui prend en paramètre 2 en
   int r; // Déclare une variable `r` qui est le reste de la division
 ```
 
-Si vous souhaitez être plus précis vous pouvez utiliser les commentaires multi lignes :
+Si vous souhaitez être plus précis, vous pouvez utiliser les commentaires multilignes :
 
 ```c
 /*
@@ -204,7 +204,7 @@ Si vous ne comprenez pas bien certaines lignes de code, essayez de chercher la r
 
 Une fois que vous avez terminé les étapes suivantes :
 
-1. corrigé le programme ;
+1. corriger le programme ;
 2. vérifié que les tests fonctionnent et
 3. annoté le programme comme demandé.
 
@@ -269,7 +269,7 @@ La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code
 
 ## Pour aller plus loin
 
-Récapitulons, jusqu'ici nous avons utilisés les programmes suivants :
+Récapitulons, jusqu'ici nous avons utilisé les programmes suivants :
 
 - `WSL` C'est le container de données dans lequel tourne Linux
 - `Ubuntu` C'est la distribution Linux que nous utilisons pour ce cours. C'est aussi la plus populaire.
@@ -283,9 +283,9 @@ Lorsque vous compilez votre programme avec la commande suivante :
 $ gcc -g gcd.c -ogcd
 ```
 
-Vous générez un exécutable `gcd` en ajoutant quelques information de déboguage utile au débogueur.
+Vous générez un exécutable `gcd` en ajoutant quelques informations de débogage utiles au débogueur.
 
-Il faut savoir que le déboggueur `gdb` peut être utilisé directement. Il était d'ailleurs utilisé à la main lorsque les IDE n'existaient pas (il y a 20 ans). Essayons pour voir avec `gdb --args gcd 36 6`
+Il faut savoir que le débogueur `gdb` peut être utilisé directement. Il était d'ailleurs utilisé à la main lorsque les IDE n'existaient pas (il y a 20 ans). Essayons pour voir avec `gdb --args gcd 36 6`
 
 ```console
 $ gdb --args gcd 36 6
@@ -344,6 +344,7 @@ gcd (a=36, b=6) at gcd.c:14
 17        return a;
 (gdb) next
 18      }
+...
 ```
 
 Enfin pour quitter le débogueur, utiliser `quit`.
