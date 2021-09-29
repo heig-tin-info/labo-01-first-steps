@@ -1,4 +1,4 @@
-# Laboratoire 01 - Premiers pas
+# 👋 Laboratoire 01 - Premiers pas
 
 Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
 
@@ -15,7 +15,7 @@ Pour l'heure, avançons pas à pas...
 - le tester ;
 - comprendre les différents fichiers constituant un projet d'Info1.
 
-## Accès au travail pratique
+## :octocat: Accès au travail pratique
 
 Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distribuer des travaux pratiques aux étudiants s'exerçant à la programmation. La première étape consiste donc à récupérer l'adresse du devoir que vous avez reçu de votre professeur (sans doute par Teams). Il vous est ensuite demandé de **joindre** le travail (*assignment*) :
 
@@ -33,7 +33,7 @@ Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin p
 
 Vous avez ici le choix entre deux protocoles de communication `HTTPS` et `GIT` + `SSH`. La première variante utilisera vos identifiants de connexion (login et mot de passe) qui vous seront demandés à chaque opération. La deuxième variante utilisera un canal sécurisé en utilisant la clé SSH que vous avez créé lors du précédent labo (cela vous évite en outre de devoir taper votre mot de passe).
 
-## Clone du référentiel
+## 💻 Clone du référentiel
 
 Lors du travail précédent, nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portal collaboratif pour les utilisateurs de Git.
 
@@ -83,7 +83,7 @@ Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'in
 
 Le raccourci `<CTRL>+<MAJ>+<E>` permet de revenir à l'arborescence de travail.
 
-## Familiarisation avec la structure des fichiers
+## 📁 Familiarisation avec la structure des fichiers
 
 Prenez connaissance de la structure des fichiers du labo ci-dessous. Vous pouvez obtenir ce type d'arborescence avec le programme `tree` depuis WSL.
 
@@ -126,7 +126,7 @@ Votre but c'est bien naturellement de corriger ces erreurs. Les étapes sont don
 2. Corriger le programme, le sauver ;
 3. Retour à (1) si échec.
 
-## Compilation automatique
+## 🏗 Compilation automatique
 
 Habituellement on n'utilise pas `gcc` directement, on ajoute des **options de compilation**. Certaines options comme `-std=c11` permettent de dire au compilateur d'utiliser le standard **C11**. Pour simplifier la compilation, le développeur écrit un fichier nommé *Makefile* qui contient toute la procédure de compilation.
 
@@ -228,7 +228,7 @@ Si la commande ne fonctionne pas chez vous, c'est que vous n'avez probablement p
     ```
 2. De mettre votre clé SSH sur GitHub
 
-## Push de vos changements
+## 📌 Push de vos changements
 
 Une fois le commit effectué, il faut encore soumettre vos changements sur GitHub, ceci s'effectue avec la commande `git push`
 
@@ -246,7 +246,7 @@ To github.com:heig-vd-tin/info1-labo-01.git
 
 À présent vous pouvez retourner sur GitHub pour vérifier que votre rendu de labo est bel et bien présent.
 
-## Quelques fonctionnalités de Visual Studio Code
+## 🛈 Quelques fonctionnalités de Visual Studio Code
 
 Si vous souhaitez être plus efficace dans l'écriture de programmes, vous devez connaître deux commandes dans Visual Studio Code :
 
@@ -267,7 +267,7 @@ La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code
 4
 ```
 
-## Pour aller plus loin
+## 🔎 Pour aller plus loin
 
 Récapitulons, jusqu'ici nous avons utilisé les programmes suivants :
 
