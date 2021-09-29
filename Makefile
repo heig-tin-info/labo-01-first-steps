@@ -1,5 +1,5 @@
 EXEC=gcd
-CFLAGS=-std=c99 -Wall -Werror
+CFLAGS=-g -std=c11 -Wall -Werror
 
 all: test
 

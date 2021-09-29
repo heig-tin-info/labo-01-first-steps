@@ -2,7 +2,7 @@
 
 Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
 
-Pour l'heure, avançons pas à pas.
+Pour l'heure, avançons pas à pas...
 
 - **Durée**: 2 périodes
 
@@ -21,7 +21,7 @@ Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distrib
 
 ![accept-this-assignment](assets/accept-this-assignment.png)
 
-Lors de cette opération, une copie du référentiel d'origine est créée avec votre nom. Ce processus de copie s'appelle *fork* (fourchette), cela crée un point d'embranchement entre le laboratoire de référence et votre propre copie que vous pourrez modifier à souhait. Dès lors vous disposerez d'un espace personnel dans lequel vous pourrez apporter vos propres modifications. C'est votre version publiée sous GitHub qui sera utilisée pour l'évaluation du laboratoire.
+Lors de cette opération, une copie du référentiel d'origine est créée avec votre nom. Ce processus de copie s'appelle *fork* (fourchette), cela crée un point d'embranchement entre le laboratoire de référence et votre propre copie que vous pourrez modifier à souhait. Dès lors, vous disposerez d'un espace personnel dans lequel vous pourrez apporter vos propres modifications. C'est votre version publiée sous GitHub qui sera utilisée pour l'évaluation du laboratoire.
 
 Après avoir joint le travail, vous pouvez vous rendre sur GitHub, dans votre espace de travail
 
@@ -57,7 +57,7 @@ Rendez-vous ensuite dans le répertoire en utilisant la commande `cd` pour *chan
 $ cd labo-01-yves-chevallier
 ```
 
-Depuis cette étape vous pouvez exécuter Visual Studio Code avec (n'oubliez pas le point `.` après le nom de la commande. Il signifie *le répertoire courant* :
+Depuis cette étape vous pouvez exécuter Visual Studio Code. N'oubliez pas le point `.` après le nom de la commande, il signifie *le répertoire courant* :
 
 ```console
 $ code .
@@ -71,11 +71,11 @@ Travailler en connexion à distance vous permet d'exécuter toutes les commandes
 
 ## Installation des extensions
 
-Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio. Visual Studio Code est un outil très polyvalent et de nombreuses extensions ajoutant des fonctionnalités peuvent être installées au gré des besoins. Le raccourci `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. Il vous est proposé l'installation des extensions suivantes :
+Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio. Visual Studio Code est un outil très polyvalent et de nombreuses extensions ajoutant des fonctionnalités peuvent être installées au gré des besoins. Le raccourci `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. On vous propose l'installation des extensions suivantes :
 
 ![extensions](assets/extensions.png)
 
-**C/C++** Permet de mieux interagir avec du code C, il permet de s'interfacer avec un débogueur, d'avoir de l'autocomplétion de code et un correcteur interactif de sytaxe.
+**C/C++** Permet de mieux interagir avec du code C, il permet de s'interfacer avec un débogueur, d'avoir de l'autocomplétion de code et un correcteur interactif de syntaxe.
 
 **Clang-Format** Permet d'automatiquement formater le code source, c'est à dire convenablement aligner les différentes lignes du code selon un standard prédéfini.
 
@@ -128,15 +128,15 @@ Votre but c'est bien naturellement de corriger ces erreurs. Les étapes sont don
 
 ## Compilation automatique
 
-Habituellement on n'utilise pas `gcc` directement, on ajoute des **options de compilation**. Certaines options comme `-std=c99` permettent de dire au compilateur d'utiliser le standard **C99**. Pour simplifier la compilation, le développeur écrit un fichier nommé *Makefile* qui contient toute la procédure de compilation.
+Habituellement on n'utilise pas `gcc` directement, on ajoute des **options de compilation**. Certaines options comme `-std=c11` permettent de dire au compilateur d'utiliser le standard **C11**. Pour simplifier la compilation, le développeur écrit un fichier nommé *Makefile* qui contient toute la procédure de compilation.
 
-Pour **Info1**, il ne vous sera jamais demandé d'écrire un *Makefile* par contre il est essentiel que vous puissiez en utiliser un.
+Pour **Info1**, il ne vous sera jamais demandé d'écrire un *Makefile* par contre, il est essentiel que vous puissiez en utiliser un.
 
 Pour l'utiliser, exécuter simplement le programme `make` dans un répertoire qui contient un `Makefile` :
 
 ```bash
 $ make
-cc -std=c99 -Wall -Werror gcd.c -o gcd
+cc -std=c11 -Wall -Werror gcd.c -o gcd
 test/test.sh /mnt/c/Users/yves.chevalli/Dropbox/work/heig-vd/teaching/info/laboratories/info1-labo-01/gcd
 Makefile:10: recipe for target 'test' failed
 make: *** [test] Error 1
@@ -153,7 +153,7 @@ $ ./gcd 12 6
 
 C'est étrange, le programme retourne 11 alors que le plus grand diviseur commun devrait être 6. Il doit y avoir un autre problème dans le programme.
 
-Sauriez-vous le trouver ?
+Saurez-vous le trouver ?
 
 ## Debug depuis Visual Studio Code
 
@@ -175,8 +175,6 @@ Dès à présent, depuis Visual Studio Code, vous pouvez utiliser le raccourci `
 ![debug](assets/debug.png)
 
 Vous pouvez naturellement créer d'autres `breakpoints` si vous le désirez. Pour interrompre le debug utilisez `<SHIFT>+<F5>`. Utilisez `<CTRL>+<SHIFT>+<E>` pour revoir l'explorateur de code.
-
-**Note** : Si vous avez une erreur qui appraît lors du debug, peut-être que le débogueur n'est pas installé sur WSL. Dans ce cas utilisez la commande `sudo apt-get install gdb` pour l'installer.
 
 ## Annotation de votre programme
 
@@ -200,17 +198,17 @@ pour expliquer des choses plus longues
 */
 ```
 
-Si vous ne comprenez pas bien certaines lignes de code, essayez de chercher la réponse sur internet.
+Si vous ne comprenez pas bien certaines lignes de code, essayez de chercher la réponse sur internet, sinon demandez autour de vous.
 
 ## Commit de vos changements
 
-Une fois que vous avez :
+Une fois que vous avez terminé les étapes suivantes :
 
-1. Corrigé le programme ;
-2. Vérifié que les tests fonctionnent ;
-3. Annoté le programme comme demandé.
+1. corrigé le programme ;
+2. vérifié que les tests fonctionnent et
+3. annoté le programme comme demandé.
 
-Vous pouvez maintenant valider vos changements avec `git`
+Vous pouvez ensuite valider vos changements avec `git`
 
 ```console
 $ git commit -am "Fix bugs + add comments"
@@ -268,4 +266,89 @@ La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code
 2
 4
 ```
+
+## Pour aller plus loin
+
+Récapitulons, jusqu'ici nous avons utilisés les programmes suivants :
+
+- `WSL` C'est le container de données dans lequel tourne Linux
+- `Ubuntu` C'est la distribution Linux que nous utilisons pour ce cours. C'est aussi la plus populaire.
+- `Visual Studio Code` C'est un éditeur de code aussi nommé IDE.
+- `gcc` C'est un programme : le compilateur C qui permet de transformer le code source en un programme exécutable
+- `gdb` C'est un autre programme : le *GNU Debugger* permettant de stopper l'exécution d'un programme en cours pour lire l'état des variables interne.
+
+Lorsque vous compilez votre programme avec la commande suivante :
+
+```bash
+$ gcc -g gcd.c -ogcd
+```
+
+Vous générez un exécutable `gcd` en ajoutant quelques information de déboguage utile au débogueur.
+
+Il faut savoir que le déboggueur `gdb` peut être utilisé directement. Il était d'ailleurs utilisé à la main lorsque les IDE n'existaient pas (il y a 20 ans). Essayons pour voir avec `gdb --args gcd 36 6`
+
+```console
+$ gdb --args gcd 36 6
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from gcd...
+(gdb)
+```
+
+Vous êtes invité à taper une commande. Essayez `break 12` pour créer un breakpoint à la ligne 12 de votre code. C'est exactement ce qui se passe dans Visual Studio Code lorsque vous placez un rond rouge à la ligne 12.
+
+```console
+(gdb) break 12
+Breakpoint 1 at 0x1177: file gcd.c, line 12.
+```
+
+Ensuite, lancer le programme :
+
+```console
+(gdb) run
+Starting program: /home/canard/labo-01-first-steps/gcd 36 6
+
+Breakpoint 1, gcd (a=36, b=6) at gcd.c:12
+12        while (b != 0) {
+```
+
+L'exécution s'arrête comme prévu à la ligne 12. On peut constater que `a` vaut 36 et `b` vaut 6. Mais que vaut `r` ?
+
+Pour obtenir cette information il faut dire au débogueur d'observer cette variable, par exemple avec `watch r`.
+
+```console
+(gdb) watch r
+Hardware watchpoint 2: r
+```
+
+Pour avancer pas à pas, utiliser l'instruction `next`:
+
+```console
+(gdb) next
+13          r = a % b;
+(gdb) next
+
+Hardware watchpoint 2: r
+
+Old value = 32767
+New value = 0
+gcd (a=36, b=6) at gcd.c:14
+14          a = b;
+(gdb) next
+15          b = r;
+(gdb) next
+12        while (b != 0) {
+(gdb) next
+17        return a;
+(gdb) next
+18      }
+```
+
+Enfin pour quitter le débogueur, utiliser `quit`.
+
+Vous trouverez [ici](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf) d'autres commandes utiles.
+
+En 2021, plus personne n'utilise `gdb` à la main. C'est néanmoins utile de comprendre comment les choses se passent *behind the scenes*...
 

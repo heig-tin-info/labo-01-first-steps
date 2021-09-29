@@ -1,3 +1,0 @@
-#!/bin/bash
-
-openssl enc -d -base64 -aes-256-ecb -k $PASSPHRASE 2> /dev/null || cat
