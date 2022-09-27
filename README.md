@@ -1,6 +1,6 @@
 # 👋 Laboratoire 01 - Premiers pas
 
-Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques moins vous serez guidé.
+Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques, moins vous serez guidé.
 
 Pour l'heure, avançons pas à pas...
 
@@ -27,7 +27,7 @@ Après avoir joint le travail, vous pouvez vous rendre sur GitHub, dans votre es
 
 ![you-are-ready-to-go](assets/you-are-ready-to-go.png)
 
-Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin permettant modifier votre référentiel
+Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin permettant de modifier votre référentiel
 
 ![copy-clone-link](assets/copy-clone-link.png)
 
@@ -35,7 +35,7 @@ Vous avez ici le choix entre deux protocoles de communication `HTTPS` et `GIT` +
 
 ## 💻 Clone du référentiel
 
-Lors du travail précédent, nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portal collaboratif pour les utilisateurs de Git.
+Lors du travail précédent, nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portail collaboratif pour les utilisateurs de Git.
 
 Pour récupérer votre projet, ouvrez une console **WSL** et faites un clone du référentiel en utilisant le lien copié plus haut :
 
@@ -63,11 +63,15 @@ Depuis cette étape vous pouvez exécuter Visual Studio Code. N'oubliez pas le p
 $ code .
 ```
 
+> La commande reçoit en argument la chaîne de caractère `.`. La commande ouvre donc VS Code dans le répertoire courant, celui du projet.
+
 Visual Studio Code est démarré dans Windows puis connecté à votre WSL par le biais d'une connexion à distance (*remote connection*). En bas à gauche de la fenêtre de Visual Studio Code vous pouvez constater un petit logo vert indiquant l'état de la connexion à distance avec WSL :
 
 ![open-remote](assets/open-remote.png)
 
-Travailler en connexion à distance vous permet d'exécuter toutes les commandes Linux depuis Windows. C'est très pratique pour rester compatible avec l'environnent normalisé POSIX qui n'est pas disponible depuis Windows seul.
+*NOTE* : Si vous ne parvenez pas à obtenir cette connexion, c'est sans doute qu'il vous manque l'extension `WSL`. Installer cette extension depuis le menu `Extensions` de Visual Studio Code, puis redémarrer Visual Studio Code.
+
+Travailler en connexion à distance vous permet d'exécuter toutes les commandes Linux depuis Windows. C'est très pratique pour rester compatible avec l'environnent normalisé **POSIX** qui n'est pas disponible depuis Windows seul.
 
 ## Installation des extensions
 
@@ -144,7 +148,7 @@ make: *** [test] Error 1
 
 Vous constatez que le programme s'est bien compilé, mais qu'une erreur est apparue à la recette `test`. C'est-à-dire que le programme de test n'a pas fonctionné. Cherchons donc à savoir pourquoi.
 
-Si l'on exécute le programme compilé avec `./` devant le nom du programme vous obtenez ceci :
+Si l'on exécute le programme compilé avec `./` devant le nom du programme, vous obtenez ceci :
 
 ```bash
 $ ./gcd 12 6
@@ -178,7 +182,7 @@ Vous pouvez naturellement créer d'autres `breakpoints` si vous le désirez. Pou
 
 ## Annotation de votre programme
 
-Pour être bien certain que vous avez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce chacune fait voici un exemple :
+Pour être bien certain que vous avez compris votre premier programme, il vous est demandé d'annoter chaque ligne avec un commentaire expliquant ce que chacune fait. Voici un exemple :
 
 ```c
 #include <stdlib.h> // Inclus la bibliothèque stdlib pour pouvoir utiliser la fonction `atoi`
@@ -252,11 +256,11 @@ Si vous souhaitez être plus efficace dans l'écriture de programmes, vous devez
 
 1. `<CTRL> + P` Navigation rapide entre fichiers
 2. `<CTRL> + <SHIFT> + P` Exécution de commandes
-3. `<CTRL> + B` Afficher/cacher l'explorateur de fichiers
+3. `<CTRL> + B` Afficher/cacher l'explorateur de fichiers.
 
 La première commande permet de facilement naviguer dans les fichiers apparaissant dans l'explorateur de fichiers à gauche de la fenêtre. Une fois `<C-P>` entré, vous pouvez faire une *fuzzy search*, c'est-à-dire taper des caractères qui apparaissent dans l'ordre dans les noms des fichiers. Par exemple `<C-P> mi` sélectionne `Makefile` qui contient un `m` suivi plus tard d'un `i`.
 
-La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code. Essayez par exemple d'ouvrir le fichier `README.md` (celui-ci) et de sélectionner les 6 lignes débutant avec des chiffres ci-dessous. Ensuite choisissez `Sort` dans le menu apparaissant avec `<CTRL> + <SHIFT> + P`.
+La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code. Essayez par exemple d'ouvrir le fichier `README.md` (celui-ci) et de sélectionner les 6 lignes débutant avec des chiffres ci-dessous. Ensuite, choisissez `Sort` dans le menu apparaissant avec `<CTRL> + <SHIFT> + P`.
 
 ```text
 1
@@ -271,7 +275,7 @@ La seconde commande permet d'exécuter d'autres commandes sur Visual Studio Code
 
 Récapitulons, jusqu'ici nous avons utilisé les programmes suivants :
 
-- `WSL` C'est le container de données dans lequel tourne Linux
+- `WSL` C'est le conteneur de données dans lequel tourne Linux
 - `Ubuntu` C'est la distribution Linux que nous utilisons pour ce cours. C'est aussi la plus populaire.
 - `Visual Studio Code` C'est un éditeur de code aussi nommé IDE.
 - `gcc` C'est un programme : le compilateur C qui permet de transformer le code source en un programme exécutable
@@ -352,4 +356,3 @@ Enfin pour quitter le débogueur, utiliser `quit`.
 Vous trouverez [ici](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf) d'autres commandes utiles.
 
 En 2021, plus personne n'utilise `gdb` à la main. C'est néanmoins utile de comprendre comment les choses se passent *behind the scenes*...
-
