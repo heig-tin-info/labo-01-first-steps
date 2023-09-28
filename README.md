@@ -1,10 +1,15 @@
 # 👋 Laboratoire 01 - Premiers pas
 
-Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques, moins vous serez guidé.
+| Type          | Description |
+| ------------- | ----------- |
+| Durée         | 2x45 minutes + Travail à la maison |
+| Rendu         | Sur GitHub |
+| Format | Travail individuel |
+| Évaluation    | Sur la fonctionnalité du code |
 
-Pour l'heure, avançons pas à pas...
+Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme.
 
-- **Durée**: 2 périodes
+Plus nous avancerons dans les travaux pratiques, moins vous serez guidé. Pour l'heure, avançons pas à pas...
 
 À la fin de ce travail pratique vous serez en mesure de :
 
@@ -27,7 +32,7 @@ Après avoir joint le travail, vous pouvez vous rendre sur GitHub, dans votre es
 
 ![you-are-ready-to-go](assets/you-are-ready-to-go.png)
 
-Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin permettant de modifier votre référentiel
+Depuis GitHub, vous avez un bouton vert permettant de copier le lien du chemin permettant de modifier votre référentiel.
 
 ![copy-clone-link](assets/copy-clone-link.png)
 
@@ -56,6 +61,8 @@ Rendez-vous ensuite dans le répertoire en utilisant la commande `cd` pour *chan
 ```console
 $ cd labo-01-yves-chevallier
 ```
+
+Astuce : il vous suffit de faire `cd lab<tab><tab>` pour compléter automatiquement le reste du texte. C'est très pratique lorsque vous avez des noms de répertoires longs.
 
 Depuis cette étape vous pouvez exécuter Visual Studio Code. N'oubliez pas le point `.` après le nom de la commande, il signifie *le répertoire courant* :
 
