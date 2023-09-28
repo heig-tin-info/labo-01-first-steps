@@ -62,7 +62,8 @@ Rendez-vous ensuite dans le répertoire en utilisant la commande `cd` pour *chan
 $ cd labo-01-yves-chevallier
 ```
 
-Astuce : il vous suffit de faire `cd lab<tab><tab>` pour compléter automatiquement le reste du texte. C'est très pratique lorsque vous avez des noms de répertoires longs.
+> **Note**
+> il vous suffit de faire `cd lab<tab><tab>` pour compléter automatiquement le reste du texte. C'est très pratique lorsque vous avez des noms de répertoires longs.
 
 Depuis cette étape vous pouvez exécuter Visual Studio Code. N'oubliez pas le point `.` après le nom de la commande, il signifie *le répertoire courant* :
 
