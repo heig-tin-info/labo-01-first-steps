@@ -1,15 +1,13 @@
 # 👋 Laboratoire 01 - Premiers pas
 
-| Type          | Description |
-| ------------- | ----------- |
-| Durée         | 2x45 minutes + Travail à la maison |
-| Rendu         | Sur GitHub |
-| Format | Travail individuel |
-| Évaluation    | Sur la fonctionnalité du code |
+| Type       | Description                        |
+| ---------- | ---------------------------------- |
+| Durée      | 2x45 minutes + Travail à la maison |
+| Rendu      | Sur GitHub                         |
+| Format     | Travail individuel                 |
+| Évaluation | Sur la fonctionnalité du code      |
 
-Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme.
-
-Plus nous avancerons dans les travaux pratiques, moins vous serez guidé. Pour l'heure, avançons pas à pas...
+Le but de ce travail pratique est la prise en main de l'environnement de développement installé précédemment et la compilation de votre premier programme. Plus nous avancerons dans les travaux pratiques, moins vous serez guidé. Pour l'heure, avançons pas à pas...
 
 À la fin de ce travail pratique vous serez en mesure de :
 
@@ -22,7 +20,7 @@ Plus nous avancerons dans les travaux pratiques, moins vous serez guidé. Pour l
 
 ## :octocat: Accès au travail pratique
 
-Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distribuer des travaux pratiques aux étudiants s'exerçant à la programmation. La première étape consiste donc à récupérer l'adresse du devoir que vous avez reçu de votre professeur (sans doute par Teams). Il vous est ensuite demandé de **joindre** le travail (*assignment*) :
+Pour ce cours nous utilisons le portail *GitHub Classroom* permettant de distribuer des travaux pratiques aux étudiants s'exerçant à la programmation. La première étape consiste donc à récupérer l'adresse du devoir que vous avez reçu de votre professeur (sans doute par Teams). Vous avez joint le travail (*assignment*) en cliquant sur le lien fourni :
 
 ![accept-this-assignment](assets/accept-this-assignment.png)
 
@@ -42,7 +40,7 @@ Vous avez ici le choix entre deux protocoles de communication `HTTPS` et `GIT` +
 
 Lors du travail précédent, nous avons installé le programme [Git](https://git-scm.com/docs/git-clone/fr). Il s'agit d'un outil très utilisé par les programmeurs pour suivre l'évolution d'un code source. C'est un outil de gestion de version. GitHub n'est qu'un portail collaboratif pour les utilisateurs de Git.
 
-Pour récupérer votre projet, ouvrez une console **WSL** et faites un clone du référentiel en utilisant le lien copié plus haut :
+Pour récupérer votre projet, ouvrez une console **WSL** et faites un clone du référentiel en utilisant le lien copié plus haut. Voici l'exemple avec mon propre lien :
 
 ```console
 $ git clone https://github.com/heig-vd-tin/labo-01-yves-chevallier.git
@@ -83,7 +81,7 @@ Travailler en connexion à distance vous permet d'exécuter toutes les commandes
 
 ## Installation des extensions
 
-Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio. Visual Studio Code est un outil très polyvalent et de nombreuses extensions ajoutant des fonctionnalités peuvent être installées au gré des besoins. Le raccourci `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. On vous propose l'installation des extensions suivantes :
+Pour disposer de tout l'arsenal de développent en C/C++ il est nécessaire d'installer des extensions à votre éditeur Visual Studio si ce n'est pas déjà fait. Visual Studio Code est un outil très polyvalent et de nombreuses extensions ajoutant des fonctionnalités peuvent être installées au gré des besoins. Le raccourci `<CTRL>+<MAJ>+<X>` permet d'ouvrir le panneau d'installation des extensions. On vous propose l'installation des extensions suivantes :
 
 ![extensions](assets/extensions.png)
 
@@ -102,10 +100,10 @@ Prenez connaissance de la structure des fichiers du labo ci-dessous. Vous pouvez
 ```text
 .
 ├── Makefile        # Les directives de compilation
-├── README.md       # La donnée du laboratoire
+├── README.md       # La donnée du laboratoire au format Markdown
 ├── assets          # Les images associées au README
 ├── gcd.c           # Le programme C à compléter / corriger
-├── lab.yml         # Une description formelle du laboratoire
+├── criteria.yml    # Les critères d'évaluation du travail
 └── test            # Les éventuels tests du laboratoire
     └── test.sh     # Le test du programme gcd.c
 ```
@@ -229,7 +227,7 @@ $ git commit -am "Fix bugs + add comments"
  create mode 100644 gcd.c
 ```
 
-L'option `-a` demande à Git de tenir compte de toutes les modifications `all`, et l'option `-m` indique que l'argument qui suit est le commentaire associé à ce set de modifications. La norme POSIX permet de concaténer les options `-am`.
+L'option `-a` demande à Git de tenir compte de toutes les modifications `all`, et l'option `-m` indique que l'argument qui suit est le commentaire associé à cet ensemble de modifications. La norme POSIX permet de concaténer les options `-am`.
 
 Si la commande ne fonctionne pas chez vous, c'est que vous n'avez probablement pas configuré votre environnent Git convenablement et que vous avez oublié soit :
 
